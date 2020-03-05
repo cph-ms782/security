@@ -3,7 +3,7 @@
 Layers  
 
  * Application  
- HTTP, DNS, FTP, POP, Telnet...   
+ HTTP, DNS(UDP), FTP, POP, Telnet...   
  * Transport   
 TCP  (Transmission Control Protocol)  
 UDP (User Diagram Protocol)  
@@ -15,10 +15,10 @@ MAC adresser
 
 
 
-### Wireshark  
+### Wireshark (startes med sudo)  
 Eksamen  
 Gem små samples af billeder fra wireshark  
-
+Vælg netwærk -> Host ip der skal monitoreres  
 
 
 ### Ping:  
@@ -55,3 +55,13 @@ traceroute to 165.22.217.196 (165.22.217.196), 30 hops max, 60 byte packets
 11  if-ae-6-2.tcore1.av2-amsterdam.as6453.net   (195.219.194.149)  27.451 ms  27.463 ms  27.736 ms  
 
 Time-to-live: Pakker har en begrænset levetid (så man ikke kan lægge internettet ned)
+en pakker dør når Time-to-live er på nul  
+
+
+** dns i wireshark **  
+cat /etc/resolv.conf  
+Viser nameserver
+
+255.255.255.255 Multicast adresse. Rammer alt på netværket  
+
+
