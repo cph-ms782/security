@@ -104,3 +104,14 @@ kan analysere wireshark scan via Statistics -> Flow Graph
 Spoofed IP:  
 `sudo hping3 -S -V 192.168.1.111 -p 5551 --rand-source`  
 [wireshark (filter TCP](./exercise/hping3SpoofedAddress.pcapng)  
+ny source adresse ved hver forespørgsel  
+
+Flood Spoofed IP:  
+`sudo hping3 -S --flood 192.168.1.111 -p 5551 --rand-source`  
+Kan give denial-of-service. Jeg kubnne ikke komme i kontakt med min webserver (javascript express på port 5551) mens det kørte  
+[wireshark](./exercise/hping3SpoofedAddressFlooding.pcapng)  
+
+
+## DNS attack Example  
+[wireshark (filter TCP](./exercise/)  
+
