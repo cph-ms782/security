@@ -1,0 +1,39 @@
+kali@kali:~$ sudo hping3 -S -V 192.168.1.111 -p 5551
+[sudo] password for kali: 
+using eth0, addr: 10.0.2.15, MTU: 1500
+HPING 192.168.1.111 (eth0 192.168.1.111): S set, 40 headers + 0 data bytes
+len=46 ip=192.168.1.111 ttl=64 id=6056 tos=0 iplen=44
+sport=5551 flags=SA seq=0 win=65535 rtt=7.8 ms
+seq=8256001 ack=769975871 sum=3b9d urp=0
+
+len=46 ip=192.168.1.111 ttl=64 id=6057 tos=0 iplen=44
+sport=5551 flags=SA seq=1 win=65535 rtt=8.4 ms
+seq=8384001 ack=2100478473 sum=207e urp=0
+
+len=46 ip=192.168.1.111 ttl=64 id=6058 tos=0 iplen=44
+sport=5551 flags=SA seq=2 win=65535 rtt=10.0 ms
+seq=8512001 ack=1821482095 sum=58c0 urp=0
+
+len=46 ip=192.168.1.111 ttl=64 id=6059 tos=0 iplen=44
+sport=5551 flags=SA seq=3 win=65535 rtt=10.0 ms
+seq=8640001 ack=29769452 sum=a494 urp=0
+
+len=46 ip=192.168.1.111 ttl=64 id=6060 tos=0 iplen=44
+sport=5551 flags=SA seq=4 win=65535 rtt=9.8 ms
+seq=8768001 ack=319681925 sum=c0d8 urp=0
+
+len=46 ip=192.168.1.111 ttl=64 id=6061 tos=0 iplen=44
+sport=5551 flags=SA seq=5 win=65535 rtt=10.1 ms
+seq=8896001 ack=2058814947 sum=b66c urp=0
+
+len=46 ip=192.168.1.111 ttl=64 id=6062 tos=0 iplen=44
+sport=5551 flags=SA seq=6 win=65535 rtt=3.3 ms
+seq=9024001 ack=346293112 sum=31e1 urp=0
+
+len=46 ip=192.168.1.111 ttl=64 id=6063 tos=0 iplen=44
+sport=5551 flags=SA seq=7 win=65535 rtt=10.0 ms
+seq=9152001 ack=53019079 sum=5b00 urp=0
+
+len=46 ip=192.168.1.111 ttl=64 id=6064 tos=0 iplen=44
+sport=5551 flags=SA seq=8 win=65535 rtt=10.1 ms
+seq=9280001 ack=1585180358 sum=5c4 urp=0  

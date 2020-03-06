@@ -96,4 +96,11 @@ hvordan får jeg fat i min gateway -> ARP
 `nmap -v -p 0-5552 -A IP_TO_YOUR_OWN_OS`  
 Uhyggelig mange pakker  
 
+## hping Exercise part 2  
+[wireshark scan](./exercise/hpingScan.pcapng)  
+[terminal](./exercise/hpingScan.txt)  
+kan analysere wireshark scan via Statistics -> Flow Graph
 
+Spoofed IP:  
+`sudo hping3 -S -V 192.168.1.111 -p 5551 --rand-source`  
+[wireshark (filter TCP](./exercise/hping3SpoofedAddress.pcapng)  
