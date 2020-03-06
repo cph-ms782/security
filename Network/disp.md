@@ -1,19 +1,30 @@
 # Network  
 
-Layers  
 
- * Application  
+#Internet protocol suite / commonly known as TCP/IP  
+[Layers](IP_stack_connections.svg.png)  
+[WIKI](https://en.wikipedia.org/wiki/Internet_protocol_suite#Key_architectural_principles)   
+
+ * Application layer    
  HTTP, DNS(UDP), FTP, POP, Telnet...   
- * Transport   
+ 
+ * Transport layer   
 TCP  (Transmission Control Protocol)  
 UDP (User Diagram Protocol)  
+connection-oriented, implemented in TCP, or connectionless, implemented in UDP.  
 Sender bidder af pakker videre?
- * Internet  
-Adresse
- * Network  
+
+ * Internet layer  
+ Internet Protocol (IP)
+ARPANET => Internet, is Internet Protocol version 4 (IPv4) / Internet Protocol version 6 (IPv6) 
+unreliable datagram transmission facility between hosts 
+ 
+ * Network/link layer  
+local area network - LAN
 MAC adresser  
 
-
+Lavet til at være robust
+Hvert lag encapsulater overnstående lags data [billede](UDP_encapsulation.svg.png)  
 
 ### Wireshark (startes med sudo)  
 Eksamen  
@@ -65,3 +76,9 @@ Viser nameserver
 255.255.255.255 Multicast adresse. Rammer alt på netværket  
 
 
+## [SYN flood attack](https://www.cloudflare.com/learning/ddos/syn-flood-ddos-attack/)  
+A SYN flood (half-open attack) is a type of denial-of-service (DDoS) attack which aims to make a server unavailable to legitimate traffic by consuming all available server resources. By repeatedly sending initial connection request (SYN) packets, the attacker is able to overwhelm all available ports on a targeted server machine, causing the targeted device to respond to legitimate traffic sluggishly or not at all.  
+
+
+## [UDP flood attack](https://www.cloudflare.com/learning/ddos/syn-flood-ddos-attack/)
+A UDP flood is a type of denial-of-service attack in which a large number of User Datagram Protocol (UDP) packets are sent to a targeted server with the aim of overwhelming that device’s ability to process and respond. The firewall protecting the targeted server can also become exhausted as a result of UDP flooding, resulting in a denial-of-service to legitimate traffic.  
