@@ -111,7 +111,23 @@ Flood Spoofed IP:
 Kan give denial-of-service. Jeg kubnne ikke komme i kontakt med min webserver (javascript express på port 5551) mens det kørte  
 [wireshark](./exercise/hping3SpoofedAddressFlooding.pcapng)  
 
+## UDP flood DOS attack  
+før angreb  
+[wireshark (filter UDP)](./exercise/UDPPacket.pcapng)  
+
+DOS  
+`sudo hping3 --flood --rand-source --udp -p PORT SERVER-IP`
+kan ikke pinge server  
+
 
 ## DNS attack Example  
-[wireshark (filter TCP](./exercise/)  
+[wireshark DNS example (filter TCP)](./exercise/dns.pcapng)  
+ved at lægge sin egen ting ind i DNS'en, så kan man dirigere browseren til hvor man vil:  
+`68.183.71.148 danskebank.dk`  
+Browseren gør at du ikke kan gå ind på https://danskebank,dk efter dette  
+når man (i den browser man har gjhort det på) en gang har været på en https side, så kan man ikke nedgradere til http  
+
+
+
+
 
