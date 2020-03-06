@@ -70,7 +70,7 @@ traceroute to 165.22.217.196 (165.22.217.196), 30 hops max, 60 byte packets
 10  if-ae-9-2.tcore1.fnm-frankfurt.as6453.net (5.23.30.16)    29.146 ms  30.857 ms  29.785 ms  
 11  if-ae-6-2.tcore1.av2-amsterdam.as6453.net   (195.219.194.149)  27.451 ms  27.463 ms  27.736 ms  
 
-Time-to-live: Pakker har en begrænset levetid (så man ikke kan lægge internettet ned)  
+Time-to-live (**ttl**): Pakker har en begrænset levetid (så man ikke kan lægge internettet ned)  
 en pakker dør når Time-to-live er på nul  
 
 
