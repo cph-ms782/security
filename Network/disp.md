@@ -90,3 +90,10 @@ A UDP flood is a type of denial-of-service attack in which a large number of Use
 
 ## ARP protocol og navn på teknologi (ikke helt eksamens relavant)  
 hvordan får jeg fat i min gateway -> ARP
+
+## nmap scanning Exercise part 2  
+[wireshark scan](./exercise/nmapScanning.pcapng)  
+`nmap -v -p 0-5552 -A IP_TO_YOUR_OWN_OS`  
+Uhyggelig mange pakker  
+
+
