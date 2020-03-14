@@ -78,7 +78,7 @@ You are hereby granted permission to scan the server hosting the BACKEND
  
 
 ## Exercise 3 A9, Components with Known Vulnerabilities  
-JavaScript giver sikkerhede ved f.eks. `npm install` hvor der kommer info om usikkerheder.  
+JavaScript giver sikkerhed ved f.eks. `npm install` hvor der kommer info om usikkerheder.  
 Github giver også check af usikkerheder og prøver at fixe dem automatisk  
 
 
