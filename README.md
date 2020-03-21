@@ -1,5 +1,9 @@
 # Security class spring 2020 CPH business
 
 
-Eksamen:  
-[pentest](./pentest/pentest.md)
+Eksamensnoter:  
+[A3](./A3/)  
+[A6-A9](./A6-A9/)  
+[Login_strategies](./Login_strategies/login_strategies.md)  
+[Network](./Network)  
+[pentest](./pentest/pentest.md)  

@@ -15,7 +15,7 @@
 ###[Security headers](https://owasp.org/www-project-secure-headers/)  
 **HSTS HTTP strict Transport Security**  
 google arbejder på at hvis man først har været på en https server så kan man ikke komme tilbage til http  
-
+pentest.md
 
 **HPKP Public Key Pinning Extension for HTTP**  
 HTTP Public Key Pinning (HPKP) is a security mechanism which allows HTTPS websites to resist impersonation by attackers using mis-issued or otherwise fraudulent certificates. (For example, sometimes attackers can compromise certificate authorities, and then can mis-issue certificates for a web origin.).  
