@@ -4,7 +4,7 @@ Webtjenester kunne let fås adgang til af enhver bruger, hvis de kendte URL og i
 
 Nogle af metoderne er:
 
-- [Javas declarative authentication and authorization features](./)
+- [Javas declarative authentication and authorization features](./JavasDeclarativeAuthenticationAndAuthorization features.md)
 - [Basic HTTP-authentication](BasicHTTP-authentication.md)
 - [Form-based authentication](Form-basedAuthentication.md)
 - [Token Based Authentication](TokenBasedAuthentication.md)
