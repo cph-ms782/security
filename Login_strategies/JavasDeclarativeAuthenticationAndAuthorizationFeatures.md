@@ -40,4 +40,4 @@ Dette beskytter en webapplikation, der starter fra dens J2EE-rodkatalog som angi
 - Support til flere protokoller gør denne type sikkerhed sårbar.
 - Data er tæt på eller indeholdt i sårbarhedspunktet.
 
-![JAAS](JAAS.png)
+![JAAS](javaAuth.PNG)
