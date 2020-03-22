@@ -4,6 +4,8 @@ Tillader udvikleren at kontrollere udseendet og følelsen af login-godkendelsess
 
 Når form-baseret godkendelse er erklæret, forekommer følgende handlinger.
 
+**Usecase**
+
 **Fordele**  
 
 

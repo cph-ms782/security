@@ -4,6 +4,6 @@
 Eksamensnoter:  
 [A3](./A3/)  
 [A6-A9](./A6-A9/)  
-[Login_strategies](./Login_strategies/login_strategies.md)  
+[Login_strategies](./Login_strategies/README.md)  
 [Network](./Network)  
 [pentest](./pentest/pentest.md)  
