@@ -1,13 +1,32 @@
 # Basic HTTP-authentication
 
-Specifying HTTP basic authentication requires that the server request a user name and password from the web client and verify that the user name and password are valid by comparing them against a database of authorized users in the specified or default realm.
-Basic authentication is the default when you do not specify an authentication mechanism.
-When basic authentication is used, the following actions occur.  
+Grundlæggende godkendelse er standard, når du ikke specificerer en godkendelsesmekanisme.  
 
- * A client requests access to a protected resource.
- * The web server returns a dialog box that requests the user name and password.  
- * The client submits the user name and password to the server.  
- * The server authenticates the user in the specified realm and, if successful, returns the requested resource.  
+Basic authentication ligner standardmetoden med brugernavn / adgangskode, hvor vi bruger et brugernavn og en adgangskode til at godkende API'et. Her en Base64-kodet streng, der indeholder brugernavnet og adgangskoden sendt til klienten. Base-64-kodning er ikke en krypteringsmetode, bare en måde at tage binære data på og omdanne dem til tekst, så de let kan overføres.  
 
-![Bascic auth](basicHTTPAuth.png)  
+Specificering af basic HTTP-authentication kræver, at serveren anmoder om et brugernavn og adgangskode fra webklienten og kontrollerer, at brugernavnet og adgangskoden er gyldig ved at sammenligne dem med en database med autoriserede brugere i den specificerede eller standardreal.  
+
+HTTPS Basic passer godt til et relativt uvigtig internt API, som kræver blot en simpel autentificering, men manglen på krypteringsdel gør det til et dårligt valg for API'er med følsomme data, da der er stor chance for eksponering i tilfælde af MITM (Man in Mellemangrebet).
+
+**Fordele**
+
+  *  Implementering er temmelig enkel, da der ikke er nogen kryptering involveret
+  *  Brug relativt mindre tid på at svare, da det kun har et enkelt opkald
+  *  Manglen på token-oprettelse og krypteringsmetode giver klienten en fordel ved at bruge mindre kode til at kalde API
+  *  Oplysningerne hentes fra serveren med kun et opkald, hvilket gør dem hurtigere end andre komplekse godkendelser
+
+**Ulemper**
+
+  *  SSL tager tid at køre grundlæggende HTTP, så dette vil gøre svartiden betydeligt langsom
+  *  Manglen på kryptering gør sikkerhedsrisikoen temmelig høj
+
+
+Når der bruges grundlæggende godkendelse, foregår følgende handlinger.
+
+  * En klient anmoder om adgang til en beskyttet ressource.
+  * Webserveren returnerer en dialogboks, der anmoder om brugernavn og adgangskode.
+  * Klienten sender brugernavnet og adgangskoden til serveren.
+  * Serveren autentificerer brugeren i den specificerede verden og returnerer den ønskede ressource, hvis den er vellykket.
+
+![Basic auth](basicHTTPAuth.png)  
 
