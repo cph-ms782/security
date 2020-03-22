@@ -47,10 +47,15 @@ xxxxx.yyyyy.zzzzz
 
  * De er state-less. Man behøver ikke at gemme i en session ID.
  * JSON Web Tokens er letvægt og kan let bruges på tværs af platforme og sprog. De er en smart måde at autentificere og autorisere uden sessioner.
+ * Skalerer let (f.eks. i forhold til cookie baseret auth)  
 
 **Ulemper** 
 
  * JWT'er kan være store (payload) i forhold til en sessions ID, Men de involverer ikke nogen handling med lagring af værdier på serveren.  
  * Når en token er udleveret, hvordan trækker man dem tilbage. Token levetid. Hvis der ikke er levetid på token, så vil den virke altid. Så skal man holde øje med hvilke tokens der er givet ud og så er det ikke stateless mere
+ * Hvis serverens "secret" signing string bliver kompromiteret, så er alle tokens kompromiseret.
+ * Kan være sårbar for XSS og CSRF angreb  
+**XSS** - Cross-site scripting gør det muligt for en angriber at udføre vilkårlig JavaScript i et offerbrugers browser.  
+**CSRF**  Cross-site request forgery giver en angriber mulighed for at tilskynde en offerbruger til at udføre handlinger, som de ikke har til hensigt.
 
 ![Token based auth](Token-Based.png)  
