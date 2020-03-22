@@ -4,6 +4,9 @@ Grundlæggende godkendelse er standard, når du ikke specificerer en godkendelse
 
 Basic authentication ligner standardmetoden med brugernavn / adgangskode, hvor vi bruger et brugernavn og en adgangskode til at godkende API'et. Her en Base64-kodet streng, der indeholder brugernavnet og adgangskoden sendt til klienten. Base-64-kodning er ikke en krypteringsmetode, bare en måde at tage binære data på og omdanne dem til tekst, så de let kan overføres.  
 
+**Base64UrlEncode**:
+Dette er en kodning. Det er konvertering fra en datatype til en anden. Afsendelse af ASCII-byte kan være et problem på mange stier. Så kodér dataene i base64. Der er 64 tegn. URL-kodning betyder, at det er sikkert at sende som url. F.eks .: - bruges i stedet for + og _ bruges i stedet for /
+
 Specificering af basic HTTP-authentication kræver, at serveren anmoder om et brugernavn og adgangskode fra webklienten og kontrollerer, at brugernavnet og adgangskoden er gyldig ved at sammenligne dem med en database med autoriserede brugere i den specificerede eller standardreal.  
 
 HTTPS Basic passer godt til et relativt uvigtig internt API, som kræver blot en simpel autentificering, men manglen på krypteringsdel gør det til et dårligt valg for API'er med følsomme data, da der er stor chance for eksponering i tilfælde af MITM (Man in Mellemangrebet).
