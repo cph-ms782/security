@@ -28,7 +28,8 @@ Dette beskytter en webapplikation, der starter fra dens J2EE-rodkatalog som angi
 **Fordele**
 
 - Du kan nemt ændre den måde, brugeren autentificerer udelukkende ved at konfigurere din server - uden at skulle ændre noget i din kode.
-- Fordelen ved J2EE-erklæringssikkerheden er, at den kræver ringe eller ingen programmering af applikationsudvikleren, fordi de fleste af sikkerhedsbeslutningerne træffes under installationen. Denne model gør det også muligt at anvende ændringer til sikkerhedsdefinitionen uden at kræve genkodning i applikationen.
+- Fordelen ved J2EE-erklæringssikkerheden er, at den kræver ringe eller ingen programmering af applikationsudvikleren, fordi de fleste af sikkerhedsbeslutningerne træffes under installationen, hvilket betyder at næsten en hver kan sætte det op uden at det skal koste virksomheden/brugeren noget
+- Denne model gør det også muligt at anvende ændringer til sikkerhedsdefinitionen uden at kræve genkodning i applikationen.
 - Sikkerhed er unikt tilpasset applikationens behov.
 - Sikkerhed er finkornet med applikationsspecifikke indstillinger.
 
@@ -38,3 +39,5 @@ Dette beskytter en webapplikation, der starter fra dens J2EE-rodkatalog som angi
 - Applikationen er afhængig af sikkerhedsattributter, der ikke kan overføres mellem applikationstyper.
 - Support til flere protokoller gør denne type sikkerhed sårbar.
 - Data er tæt på eller indeholdt i sårbarhedspunktet.
+
+![JAAS](JAAS.png)
