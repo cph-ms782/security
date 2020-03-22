@@ -1,6 +1,6 @@
 # Basic HTTP-authentication
 
-Grundlæggende godkendelse er standard, når du ikke specificerer en godkendelsesmekanisme.
+Basic HTTP-authentication er standard, når du ikke specificerer en godkendelsesmekanisme.
 
 Basic authentication ligner standardmetoden med brugernavn / adgangskode, hvor vi bruger et brugernavn og en adgangskode til at godkende API'et. Her en Base64-kodet streng, der indeholder brugernavnet og adgangskoden sendt til klienten. Base-64-kodning er ikke en krypteringsmetode, bare en måde at tage binære data på og omdanne dem til tekst, så de let kan overføres.
 
