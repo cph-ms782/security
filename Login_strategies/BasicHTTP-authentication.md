@@ -18,7 +18,9 @@ HTTPS Basic passer godt til et relativt uvigtig internt API, som kræver blot en
 **Ulemper**
 
   *  SSL tager tid at køre grundlæggende HTTP, så dette vil gøre svartiden betydeligt langsom
-  *  Manglen på kryptering gør sikkerhedsrisikoen temmelig høj
+  *  Manglen på kryptering gør sikkerhedsrisikoen temmelig høj. Sikkerhedsproblemer skyldes overvejende brugen af Basic-autorisation uden SSL, i hvilket tilfælde brugernavnet og adgangskoden udsættes for en MITM.
+  *  I en browser er der også problemer med udløb af legitimationsoplysninger, men dette er ikke så meget af et problem for REST-tjenester.  
+ 
 
 
 Når der bruges grundlæggende godkendelse, foregår følgende handlinger.
