@@ -94,10 +94,18 @@ mysql> FLUSH PRIVILEGES;
 
     
 - Demonstrate a client application (Java or whatever you prefer) running on a separate server that access the Database using SSL   
-    ****  
-    
+    - java  
+    [persistence.xml](./mysql/src/main/resources/META-INF/persistence.xml)  
+    [java class](./mysql/src/main/java/test/Tester.java)  
+        
 - how to set up an SSL connection that requires clients to identify themselves with a certificate.  
-    ****  
+    
+    **`sudo nano /etc/mysql/my.cnf`**  
+    [client]  
+    ssl-ca=/var/lib/mysql/ca.pem  
+    ssl-cert=/var/lib/mysql/server-cert.pem  
+    ssl-key=/var/lib/mysql/server-key.pem  
+  
 
 You decide the order in which you want to present these topics since you probably won’t have time to cover all the individual “pins”
 
