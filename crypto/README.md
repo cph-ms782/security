@@ -45,19 +45,22 @@ Explain conceptually all the following terms, and how/why they are needed for SS
     Det anbefales generelt at kryptere data først og derefter beregne MAC. 
     
 Explain what it takes to safely log in to an SSH server, without having to provide a password  
-**En SSH-session er etableret i to separate trin.  
 
 - klient ssh'er ind på server.  
 - server sender sin public key og der bliver spurgt om klienten vil acceptere denne. Man skal skrive yes fuldt ud for at komme videre. Her kunne man ringe til admin for at høre om public key er rigtig.  
 - klienten laver så et key-pair. Public key placeres i **`~/.ssh/authorized_keys`** filen i brugerens hjemmefolder på serveren.  
-- .
-- Den første er at blive enige om og etablere kryptering for at beskytte fremtidig kommunikation.
-- Den anden fase er at autentificere brugeren og opdage, om der skal gives adgang til serveren.**    
 
 Explain the term SSH-tunnel, and provide a practical example for its use  
 **Et virtuelt rør, som beskytter data mod at udefrakommende kan se ind**  
 
-Explain conceptually the purpose of Symmetrical Encryption, Asymmetrical Encryption and hashing for an SSH-connection
+Explain conceptually the purpose of Symmetrical Encryption, Asymmetrical Encryption and hashing for an SSH-connection  
+
+**En SSH-session er etableret i to separate trin.**  
+
+1. (symmetrisk) Den første er at blive enige om og etablere kryptering for at beskytte fremtidig kommunikation.  
+2. (assymetrisk) Den anden fase er at autentificere brugeren og opdage, om der skal gives adgang til serveren.**    
+
+    Derefter overføres data symmetrisk enkrypteret og hashed så der kan checkes når det når frem om der er pillet ved data.  
 
 SSL/TSL - SSH:  
 
