@@ -75,7 +75,7 @@ Explain the steps you have to go through to set up a server with MySQL, as secur
   - **man kan sætte serverens firewall til kun at kun en hvis IP kan forbinde til port 3306 f.eks.**
 
 - If set up to allow only localhost and a firewall that deny 3306, can we still connect “safely” from a remote server  
-   **Man kan SSH tunnel sig ind bag firewall'en på serveren og forbinde til databasen derfra**  
+   **Man kan SSH tunnel sig ind bag firewall'en på serveren og forbinde til databasen derfra**
 
 - how to set up an SSL connection that anyone can use  
    **lav en bruger der skal benytte SSL.**  
@@ -85,8 +85,8 @@ Explain the steps you have to go through to set up a server with MySQL, as secur
 
   mysql> GRANT ALL ON example.\* TO 'everywhere'@'%';  
   mysql> FLUSH PRIVILEGES;
-    
-   **Sæt MYSQL op til at kunne forbinde til alle, men at de skal bruge en sikker forbindelse, SSL:**
+
+  **Sæt MYSQL op til at kunne forbinde til alle, men at de skal bruge en sikker forbindelse, SSL:**
 
       **`sudo nano /etc/mysql/my.cnf`**
       [mysqld]
@@ -94,9 +94,10 @@ Explain the steps you have to go through to set up a server with MySQL, as secur
       bind-address = 0.0.0.0
 
 - Demonstrate a client application (Java or whatever you prefer) running on a separate server that access the Database using SSL
+
   - [java](./mysql)  
     [persistence.xml](./mysql/src/main/resources/META-INF/persistence.xml)  
-    [java class](./mysql/src/main/java/test/Tester.java)  
+    [java class](./mysql/src/main/java/test/Tester.java)
 
 - how to set up an SSL connection that requires clients to identify themselves with a certificate.  
    Kunne ikke få nedenstående til at virke, men det var det eneste jeg kunne finde om certifiakter
